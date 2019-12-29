@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".camera">
+
+
+    <SurfaceView
+        android:id="@+id/camerapreview"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/camerapreview"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Kohdista viivakoodiin"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/camerapreview" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_gravity="center"
+        android:background="#E91E63"
+        app:layout_constraintTop_toBottomOf="@+id/camerapreview"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/listaItem2"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:text="Tuotteet"
+        android:textColor="#000"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/lv2"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <ListView
+        android:id="@+id/lv2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listaItem2"
+        tools:layout_editor_absoluteX="8dp"
+        android:transcriptMode="alwaysScroll"></ListView>
+
+
+</android.support.constraint.ConstraintLayout>

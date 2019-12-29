@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_asiakasn"
+        android:icon="@drawable/ic_asiakasn"
+        android:title="@string/action_asiakasn"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_lisaa"
+        android:icon="@drawable/ic_lisaa"
+        android:title="@string/action_lisaa"
+        app:showAsAction="always"/>
+
+</menu>

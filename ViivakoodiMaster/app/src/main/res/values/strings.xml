@@ -1,0 +1,10 @@
+<resources>
+    //Applikaation nimi
+    <string name="app_name">Keräilymestari</string>
+
+    //Actionbar iconit
+    <string name="action_delete">Poista kaikki</string>
+    <string name="action_lisaa">Lisaa viivakoodi</string>
+    <string name="action_asiakasn">Vaihda asiakasnumero</string>
+
+</resources>
